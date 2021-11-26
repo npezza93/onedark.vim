@@ -365,6 +365,9 @@ if has("nvim")
   call s:h("DiagnosticUnderlineInfo", { "fg": s:blue, "gui": "underline", "cterm": "underline" })
   call s:h("DiagnosticUnderlineHint", { "fg": s:cyan, "gui": "underline", "cterm": "underline" })
   " }}}
+
+  call s:h("CmpItemAbbr", { "fg": s:white })
+  call s:h("CmpItemAbbrMatch", { "fg": s:white })
 endif
 
 " }}}
