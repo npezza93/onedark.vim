@@ -17,7 +17,7 @@ let s:colors = {
   \ "menu_grey": { "gui": "#3E4452", "cterm": "237", "cterm16": "8" },
   \ "special_grey": { "gui": "#3B4048", "cterm": "238", "cterm16": "15" },
   \ "vertsplit": { "gui": "#181A1F", "cterm": "59", "cterm16": "15" },
-  \ "foreground": { "gui": "#ABB2BF", "cterm": "145", "cterm16": "NONE" },
+  \ "foreground": { "gui": "#F1F1F0", "cterm": "145", "cterm16": "NONE" },
   \ "background": { "gui": "#282A36", "cterm": "235", "cterm16": "NONE" },
 \}
 
