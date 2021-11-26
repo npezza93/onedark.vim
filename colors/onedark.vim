@@ -129,8 +129,6 @@ endfunction
 
 " }}}
 
-" }}}
-
 " Color Variables {{{
 
 let s:colors = onedark#GetColors()
@@ -154,17 +152,6 @@ let s:visual_grey = s:colors.visual_grey
 let s:menu_grey = s:colors.menu_grey
 let s:special_grey = s:colors.special_grey
 let s:vertsplit = s:colors.vertsplit
-
-" }}}
-
-" Terminal Colors {{{
-
-let g:terminal_ansi_colors = [
-  \ s:black.gui, s:red.gui, s:green.gui, s:yellow.gui,
-  \ s:blue.gui, s:purple.gui, s:cyan.gui, s:comment_grey.gui,
-  \ s:visual_grey.gui, s:red.gui, s:green.gui, s:yellow.gui,
-  \ s:blue.gui, s:purple.gui, s:cyan.gui, s:white.gui
-\]
 
 " }}}
 
@@ -204,7 +191,6 @@ call s:h("Debug", {}) " debugging statements
 call s:h("Underlined", { "gui": "underline", "cterm": "underline" }) " text that stands out, HTML links
 call s:h("Ignore", {}) " left blank, hidden
 call s:h("Error", { "fg": s:red }) " any erroneous construct
-call s:h("Todo", { "fg": s:purple }) " anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
 " }}}
 
@@ -267,14 +253,6 @@ call s:h("Visual", { "bg": s:visual_grey }) " Visual mode selection
 call s:h("VisualNOS", { "bg": s:visual_grey }) " Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
 call s:h("WarningMsg", { "fg": s:yellow }) " warning messages
 call s:h("WildMenu", { "fg": s:black, "bg": s:blue }) " current match in 'wildmenu' completion
-
-" }}}
-
-" Termdebug highlighting for Vim 8.1+ {{{
-
-" See `:h hl-debugPC` and `:h hl-debugBreakpoint`.
-call s:h("debugPC", { "bg": s:special_grey }) " the current position
-call s:h("debugBreakpoint", { "fg": s:black, "bg": s:red }) " a breakpoint
 
 " }}}
 
@@ -354,26 +332,93 @@ hi link gitcommitUnmergedArrow gitcommitUnmergedFile
 
 " Neovim-Specific Highlighting {{{
 
-if has("nvim")
-  " Neovim Diagnostics {{{
-  call s:h("DiagnosticError", { "fg": s:red })
-  call s:h("DiagnosticWarn", { "fg": s:yellow })
-  call s:h("DiagnosticInfo", { "fg": s:blue })
-  call s:h("DiagnosticHint", { "fg": s:cyan })
-  call s:h("DiagnosticUnderlineError", { "fg": s:red, "gui": "underline", "cterm": "underline" })
-  call s:h("DiagnosticUnderlineWarn", { "fg": s:yellow, "gui": "underline", "cterm": "underline" })
-  call s:h("DiagnosticUnderlineInfo", { "fg": s:blue, "gui": "underline", "cterm": "underline" })
-  call s:h("DiagnosticUnderlineHint", { "fg": s:cyan, "gui": "underline", "cterm": "underline" })
-  " }}}
-
-endif
+call s:h("DiagnosticError", { "fg": s:red })
+call s:h("DiagnosticWarn", { "fg": s:yellow })
+call s:h("DiagnosticInfo", { "fg": s:blue })
+call s:h("DiagnosticHint", { "fg": s:cyan })
+call s:h("DiagnosticUnderlineError", { "fg": s:red, "gui": "underline", "cterm": "underline" })
+call s:h("DiagnosticUnderlineWarn", { "fg": s:yellow, "gui": "underline", "cterm": "underline" })
+call s:h("DiagnosticUnderlineInfo", { "fg": s:blue, "gui": "underline", "cterm": "underline" })
+call s:h("DiagnosticUnderlineHint", { "fg": s:cyan, "gui": "underline", "cterm": "underline" })
 
 call s:h("CmpItemAbbr", { "fg": s:foreground })
 call s:h("CmpItemAbbrMatch", { "fg": s:foreground })
 call s:h("CmpItemMenu", { "fg": s:foreground })
 
-" }}}
+call s:h("gitcommitDiscardedFile", { "fg": s:red })
 
-" Must appear at the end of the file to work around this oddity:
-" https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
-set background=dark
+call s:h("TSAttribute", { "fg": s:cyan })
+call s:h("TSField", { "fg": s:cyan })
+call s:h("TSFuncBuiltin", { "fg": s:cyan })
+call s:h("TSProperty", { "fg": s:cyan })
+call s:h("TSSymbol", { "fg": s:cyan })
+call s:h("TSStringRegex", { "fg": s:cyan })
+call s:h("TSStringEscape", { "fg": s:cyan })
+
+call s:h("TSConstructor", { "fg": s:yellow })
+call s:h("TSType", { "fg": s:yellow })
+call s:h("TSConstant", { "fg": s:yellow })
+call s:h("TSBoolean", { "fg": s:yellow })
+call s:h("TSFloat", { "fg": s:yellow })
+call s:h("TSNumber", { "fg": s:yellow })
+call s:h("TSConstBuiltin", { "fg": s:yellow })
+call s:h("TSConstMacro", { "fg": s:yellow })
+call s:h("TSTypeBuiltin", { "fg": s:yellow })
+
+" Blue
+highlight TSMethod guifg='#57C7FF'
+highlight TSFunction guifg='#57C7FF'
+
+" Red
+highlight TSLabel guifg='#FF5C57'
+highlight TSTag guifg='#FF5C57'
+highlight TSTagDelimiter guifg='#FF5C57'
+highlight TSVariableBuiltin guifg='#FF5C57'
+highlight TSGlobalVariable guifg='#FF5C57'
+highlight TSPunctSpecial guifg='#FF5C57'
+highlight TSParameter guifg='#FF5C57'
+
+" Green
+highlight TSString guifg='#5AF78E'
+highlight TSLiteral guifg='#5AF78E'
+
+" Dark grey
+highlight TSComment guifg='#5C6370'
+
+" White
+highlight TSAnnotation guifg='#ABB2BF'
+highlight TSCharacter guifg='#ABB2BF'
+highlight TSError guifg='#ABB2BF'
+highlight TSFuncMacro guifg='#ABB2BF'
+highlight TSNamespace guifg='#ABB2BF'
+highlight TSNone guifg='#ABB2BF'
+highlight TSParameterReference guifg='#ABB2BF'
+highlight TSPunctDelimiter guifg='#ABB2BF'
+highlight TSPunctBracket guifg='#ABB2BF'
+highlight TSText guifg='#ABB2BF'
+highlight TSStrong guifg='#ABB2BF'
+highlight TSEmphasis guifg='#ABB2BF'
+highlight TSUnderline guifg='#ABB2BF'
+highlight TSStrike guifg='#ABB2BF'
+highlight TSTitle guifg='#ABB2BF'
+highlight TSURI guifg='#ABB2BF'
+highlight TSMath guifg='#ABB2BF'
+highlight TSTextReference guifg='#ABB2BF'
+highlight TSEnviroment guifg='#ABB2BF'
+highlight TSEnviromentName guifg='#ABB2BF'
+highlight TSNote guifg='#ABB2BF'
+highlight TSWarning guifg='#ABB2BF'
+highlight TSDanger guifg='#ABB2BF'
+highlight TSVariable guifg='#ABB2BF'
+
+" Purple
+highlight TSConditional guifg='#FF6AC1'
+highlight TSException guifg='#FF6AC1'
+highlight TSInclude guifg='#FF6AC1'
+highlight TSKeyword guifg='#FF6AC1'
+highlight TSKeywordFunction guifg='#FF6AC1'
+highlight TSKeywordOperator guifg='#FF6AC1'
+highlight TSRepeat guifg='#FF6AC1'
+highlight TSOperator guifg='#FF6AC1'
+
+" }}}
