@@ -20,6 +20,7 @@ let s:colors = {
   \ "visual_black":   { "gui": "NONE",    "cterm": "NONE", "cterm16": "0" },
   \ "background":     { "gui": "NONE",    "cterm": "235", "cterm16": "NONE" },
   \ "cursor_ln":      { "gui": "#6494ed", "cterm": "39", "cterm16": "4" },
+  \ "lightline_bg":   { "gui": "#000000", "cterm": "59",   "cterm16": "15" },
 \}
 
 let s:catpuccin_colors = {
@@ -27,7 +28,7 @@ let s:catpuccin_colors = {
   \ "menu_grey":      { "gui": "#575268", "cterm": "237",  "cterm16": "8" },
   \ "special_grey":   { "gui": "#3B4048", "cterm": "238",  "cterm16": "15" },
   \ "foreground":     { "gui": "#D9E0EE", "cterm": "145",  "cterm16": "7" },
-  \ "black":          { "gui": "#575268", "cterm": "235",  "cterm16": "0" },
+  \ "black":          { "gui": "#6E6C7E", "cterm": "235",  "cterm16": "0" },
   \ "white":          { "gui": "#D9E0EE", "cterm": "145",  "cterm16": "7" },
   \ "vertsplit":      { "gui": "#575268", "cterm": "59",   "cterm16": "15" },
   \ "cyan":           { "gui": "#89DCEB", "cterm": "38",   "cterm16": "6" },
@@ -44,6 +45,7 @@ let s:catpuccin_colors = {
   \ "red":            { "gui": "#F28FAD", "cterm": "204",  "cterm16": "1" },
   \ "dark_red":       { "gui": "#F28FAD", "cterm": "196",  "cterm16": "9" },
   \ "comment_grey":   { "gui": "#6E6C7E", "cterm": "59",   "cterm16": "15" },
+  \ "lightline_bg":   { "gui": "#1E1D2F", "cterm": "59",   "cterm16": "15" },
 \}
 
 function! onedark#GetColors()
