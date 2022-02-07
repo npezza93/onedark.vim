@@ -38,7 +38,7 @@ let s:catpuccin_colors = {
   \ "visual_black":   { "gui": "NONE",    "cterm": "NONE", "cterm16": "0" },
   \ "background":     { "gui": "NONE",    "cterm": "235",  "cterm16": "NONE" },
   \ "cursor_ln":      { "gui": "#96CDFB", "cterm": "39", "cterm16": "4" },
-  \ "cursor_grey":    { "gui": "#575268", "cterm": "236", "cterm16": "8" },
+  \ "cursor_grey":    { "gui": "#302D41", "cterm": "236", "cterm16": "8" },
   \ "visual_grey":    { "gui": "#1E1D2F", "cterm": "237", "cterm16": "15" },
   \ "yellow":         { "gui": "#FAE3B0", "cterm": "180",  "cterm16": "3" },
   \ "dark_yellow":    { "gui": "#FAE3B0", "cterm": "173",  "cterm16": "11" },
