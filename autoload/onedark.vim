@@ -27,16 +27,14 @@ let s:catpuccin_colors = {
   \ "dark_red":       { "gui": "#FF5C57", "cterm": "196",  "cterm16": "9" },
   \ "yellow":         { "gui": "#F3F99D", "cterm": "180",  "cterm16": "3" },
   \ "dark_yellow":    { "gui": "#F3F99D", "cterm": "173",  "cterm16": "11" },
-  \ "white":          { "gui": "#ABB2BF", "cterm": "145",  "cterm16": "7" },
-  \ "black":          { "gui": "#282A36", "cterm": "235",  "cterm16": "0" },
   \ "comment_grey":   { "gui": "#5C6370", "cterm": "59",   "cterm16": "15" },
   \ "gutter_fg_grey": { "gui": "#4B5263", "cterm": "238",  "cterm16": "15" },
-  \ "cursor_grey":    { "gui": "#262626", "cterm": "236",  "cterm16": "8" },
-  \ "visual_grey":    { "gui": "#262626", "cterm": "237",  "cterm16": "15" },
   \ "menu_grey":      { "gui": "#3E4452", "cterm": "237",  "cterm16": "8" },
   \ "special_grey":   { "gui": "#3B4048", "cterm": "238",  "cterm16": "15" },
-  \ "vertsplit":      { "gui": "#181A1F", "cterm": "59",   "cterm16": "15" },
   \ "foreground":     { "gui": "#ABB2BF", "cterm": "145",  "cterm16": "7" },
+  \ "black":          { "gui": "#6E6C7E", "cterm": "235",  "cterm16": "0" },
+  \ "white":          { "gui": "#D9E0EE", "cterm": "145",  "cterm16": "7" },
+  \ "vertsplit":      { "gui": "#161320", "cterm": "59",   "cterm16": "15" },
   \ "cyan":           { "gui": "#89DCEB", "cterm": "38",   "cterm16": "6" },
   \ "purple":         { "gui": "#F5C2E7", "cterm": "170",  "cterm16": "5" },
   \ "green":          { "gui": "#ABE9B3", "cterm": "114",  "cterm16": "2" },
@@ -44,6 +42,8 @@ let s:catpuccin_colors = {
   \ "visual_black":   { "gui": "NONE",    "cterm": "NONE", "cterm16": "0" },
   \ "background":     { "gui": "NONE",    "cterm": "235",  "cterm16": "NONE" },
   \ "cursor_ln":      { "gui": "#96CDFB", "cterm": "39", "cterm16": "4" },
+  \ "cursor_grey":    { "gui": "#1E1D2F", "cterm": "236", "cterm16": "8" },
+  \ "visual_grey":    { "gui": "#1E1D2F", "cterm": "237", "cterm16": "15" },
 \}
 
 function! onedark#GetColors()
