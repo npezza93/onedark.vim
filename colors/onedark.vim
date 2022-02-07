@@ -367,59 +367,69 @@ call s:h("TSConstMacro", { "fg": s:yellow })
 call s:h("TSTypeBuiltin", { "fg": s:yellow })
 
 " Blue
-highlight TSMethod guifg='#57C7FF'
-highlight TSFunction guifg='#57C7FF'
+call s:h("TSMethod", { "fg": s:blue })
+call s:h("TSFunction", { "fg": s:blue })
 
 " Red
-highlight TSLabel guifg='#FF5C57'
-highlight TSTag guifg='#FF5C57'
-highlight TSTagDelimiter guifg='#FF5C57'
-highlight TSVariableBuiltin guifg='#FF5C57'
-highlight TSGlobalVariable guifg='#FF5C57'
-highlight TSPunctSpecial guifg='#FF5C57'
-highlight TSParameter guifg='#FF5C57'
+call s:h("TSLabel", { "fg": s:red })
+call s:h("TSTag", { "fg": s:red })
+call s:h("TSTagDelimiter", { "fg": s:red })
+call s:h("TSVariableBuiltin", { "fg": s:red })
+call s:h("TSGlobalVariable", { "fg": s:red })
+call s:h("TSPunctSpecial", { "fg": s:red })
+call s:h("TSParameter", { "fg": s:red })
 
 " Green
-highlight TSString guifg='#5AF78E'
-highlight TSLiteral guifg='#5AF78E'
+call s:h("TSString", { "fg": s:green })
+call s:h("TSLiteral", { "fg": s:green })
 
 " Dark grey
-highlight TSComment guifg='#5C6370'
+call s:h("TSComment", { "fg": s:comment_grey })
 
 " White
-highlight TSAnnotation guifg='#ABB2BF'
-highlight TSCharacter guifg='#ABB2BF'
-highlight TSError guifg='#ABB2BF'
-highlight TSFuncMacro guifg='#ABB2BF'
-highlight TSNamespace guifg='#ABB2BF'
-highlight TSNone guifg='#ABB2BF'
-highlight TSParameterReference guifg='#ABB2BF'
-highlight TSPunctDelimiter guifg='#ABB2BF'
-highlight TSPunctBracket guifg='#ABB2BF'
-highlight TSText guifg='#ABB2BF'
-highlight TSStrong guifg='#ABB2BF'
-highlight TSEmphasis guifg='#ABB2BF'
-highlight TSUnderline guifg='#ABB2BF'
-highlight TSStrike guifg='#ABB2BF'
-highlight TSTitle guifg='#ABB2BF'
-highlight TSURI guifg='#ABB2BF'
-highlight TSMath guifg='#ABB2BF'
-highlight TSTextReference guifg='#ABB2BF'
-highlight TSEnviroment guifg='#ABB2BF'
-highlight TSEnviromentName guifg='#ABB2BF'
-highlight TSNote guifg='#ABB2BF'
-highlight TSWarning guifg='#ABB2BF'
-highlight TSDanger guifg='#ABB2BF'
-highlight TSVariable guifg='#ABB2BF'
+call s:h("TSAnnotation", { "fg": s:white })
+call s:h("TSCharacter", { "fg": s:white })
+call s:h("TSError", { "fg": s:white })
+call s:h("TSFuncMacro", { "fg": s:white })
+call s:h("TSNamespace", { "fg": s:white })
+call s:h("TSNone", { "fg": s:white })
+call s:h("TSParameterReference", { "fg": s:white })
+call s:h("TSPunctDelimiter", { "fg": s:white })
+call s:h("TSPunctBracket", { "fg": s:white })
+call s:h("TSText", { "fg": s:white })
+call s:h("TSStrong", { "fg": s:white })
+call s:h("TSEmphasis", { "fg": s:white })
+call s:h("TSUnderline", { "fg": s:white })
+call s:h("TSStrike", { "fg": s:white })
+call s:h("TSTitle", { "fg": s:white })
+call s:h("TSURI", { "fg": s:white })
+call s:h("TSMath", { "fg": s:white })
+call s:h("TSTextReference", { "fg": s:white })
+call s:h("TSEnviroment", { "fg": s:white })
+call s:h("TSEnviromentName", { "fg": s:white })
+call s:h("TSNote", { "fg": s:white })
+call s:h("TSWarning", { "fg": s:white })
+call s:h("TSDanger", { "fg": s:white })
+call s:h("TSVariable", { "fg": s:white })
 
 " Purple
-highlight TSConditional guifg='#FF6AC1'
-highlight TSException guifg='#FF6AC1'
-highlight TSInclude guifg='#FF6AC1'
-highlight TSKeyword guifg='#FF6AC1'
-highlight TSKeywordFunction guifg='#FF6AC1'
-highlight TSKeywordOperator guifg='#FF6AC1'
-highlight TSRepeat guifg='#FF6AC1'
-highlight TSOperator guifg='#FF6AC1'
+call s:h("TSConditional", { "fg": s:purple })
+call s:h("TSException", { "fg": s:purple })
+call s:h("TSInclude", { "fg": s:purple })
+call s:h("TSKeyword", { "fg": s:purple })
+call s:h("TSKeywordFunction", { "fg": s:purple })
+call s:h("TSKeywordOperator", { "fg": s:purple })
+call s:h("TSRepeat", { "fg": s:purple })
+call s:h("TSOperator", { "fg": s:purple })
+
+call s:h("RubyModelMacro", { "fg": s:purple })
+call s:h("RubyModelCallback", { "fg": s:purple })
+call s:h("RubyModelValidations", { "fg": s:purple })
 
 " }}}
+call s:h("CursorLineNR", { "fg": s:cursor_ln })
+
+highlight Visual gui=reverse
+highlight MatchParen gui=undercurl guifg=NONE
+highlight def link rubyHelper Macro
+highlight def link rubyViewHelper Macro
