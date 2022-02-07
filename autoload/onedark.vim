@@ -24,10 +24,10 @@ let s:colors = {
 
 let s:catpuccin_colors = {
   \ "gutter_fg_grey": { "gui": "#4B5263", "cterm": "238",  "cterm16": "15" },
-  \ "menu_grey":      { "gui": "#988BA2", "cterm": "237",  "cterm16": "8" },
+  \ "menu_grey":      { "gui": "#575268", "cterm": "237",  "cterm16": "8" },
   \ "special_grey":   { "gui": "#3B4048", "cterm": "238",  "cterm16": "15" },
   \ "foreground":     { "gui": "#D9E0EE", "cterm": "145",  "cterm16": "7" },
-  \ "black":          { "gui": "#6E6C7E", "cterm": "235",  "cterm16": "0" },
+  \ "black":          { "gui": "#575268", "cterm": "235",  "cterm16": "0" },
   \ "white":          { "gui": "#D9E0EE", "cterm": "145",  "cterm16": "7" },
   \ "vertsplit":      { "gui": "#575268", "cterm": "59",   "cterm16": "15" },
   \ "cyan":           { "gui": "#89DCEB", "cterm": "38",   "cterm16": "6" },
@@ -37,7 +37,7 @@ let s:catpuccin_colors = {
   \ "visual_black":   { "gui": "NONE",    "cterm": "NONE", "cterm16": "0" },
   \ "background":     { "gui": "NONE",    "cterm": "235",  "cterm16": "NONE" },
   \ "cursor_ln":      { "gui": "#96CDFB", "cterm": "39", "cterm16": "4" },
-  \ "cursor_grey":    { "gui": "#1E1D2F", "cterm": "236", "cterm16": "8" },
+  \ "cursor_grey":    { "gui": "#575268", "cterm": "236", "cterm16": "8" },
   \ "visual_grey":    { "gui": "#1E1D2F", "cterm": "237", "cterm16": "15" },
   \ "yellow":         { "gui": "#FAE3B0", "cterm": "180",  "cterm16": "3" },
   \ "dark_yellow":    { "gui": "#FAE3B0", "cterm": "173",  "cterm16": "11" },
