@@ -23,11 +23,10 @@ let s:colors = {
 \}
 
 let s:catpuccin_colors = {
-  \ "comment_grey":   { "gui": "#5C6370", "cterm": "59",   "cterm16": "15" },
   \ "gutter_fg_grey": { "gui": "#4B5263", "cterm": "238",  "cterm16": "15" },
-  \ "menu_grey":      { "gui": "#3E4452", "cterm": "237",  "cterm16": "8" },
+  \ "menu_grey":      { "gui": "#988BA2", "cterm": "237",  "cterm16": "8" },
   \ "special_grey":   { "gui": "#3B4048", "cterm": "238",  "cterm16": "15" },
-  \ "foreground":     { "gui": "#ABB2BF", "cterm": "145",  "cterm16": "7" },
+  \ "foreground":     { "gui": "#D9E0EE", "cterm": "145",  "cterm16": "7" },
   \ "black":          { "gui": "#6E6C7E", "cterm": "235",  "cterm16": "0" },
   \ "white":          { "gui": "#D9E0EE", "cterm": "145",  "cterm16": "7" },
   \ "vertsplit":      { "gui": "#575268", "cterm": "59",   "cterm16": "15" },
@@ -44,6 +43,7 @@ let s:catpuccin_colors = {
   \ "dark_yellow":    { "gui": "#FAE3B0", "cterm": "173",  "cterm16": "11" },
   \ "red":            { "gui": "#F28FAD", "cterm": "204",  "cterm16": "1" },
   \ "dark_red":       { "gui": "#F28FAD", "cterm": "196",  "cterm16": "9" },
+  \ "comment_grey":   { "gui": "#6E6C7E", "cterm": "59",   "cterm16": "15" },
 \}
 
 function! onedark#GetColors()
