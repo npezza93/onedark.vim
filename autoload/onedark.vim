@@ -19,7 +19,7 @@ let s:colors = {
   \ "foreground":     { "gui": "#ABB2BF", "cterm": "145", "cterm16": "7" },
   \ "visual_black":   { "gui": "NONE",    "cterm": "NONE", "cterm16": "0" },
   \ "background":     { "gui": "NONE",    "cterm": "235", "cterm16": "NONE" },
-  \ "cursor_ln":      { "gui": "#6494ed", "cterm": "39", "cterm16": "4" }
+  \ "cursor_ln":      { "gui": "#6494ed", "cterm": "39", "cterm16": "4" },
 \}
 
 let s:catpuccin_colors = {
@@ -43,7 +43,7 @@ let s:catpuccin_colors = {
   \ "blue":           { "gui": "#96CDFB", "cterm": "39",   "cterm16": "4" },
   \ "visual_black":   { "gui": "NONE",    "cterm": "NONE", "cterm16": "0" },
   \ "background":     { "gui": "NONE",    "cterm": "235",  "cterm16": "NONE" },
-  \ "cursor_ln":      { "gui": "#96CDFB", "cterm": "39", "cterm16": "4" }
+  \ "cursor_ln":      { "gui": "#96CDFB", "cterm": "39", "cterm16": "4" },
 \}
 
 function! onedark#GetColors()
