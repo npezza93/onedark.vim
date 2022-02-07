@@ -46,6 +46,30 @@ let s:catpuccin_colors = {
   \ "dark_red":       { "gui": "#F28FAD", "cterm": "196",  "cterm16": "9" },
   \ "comment_grey":   { "gui": "#6E6C7E", "cterm": "59",   "cterm16": "15" },
   \ "lightline_bg":   { "gui": "#1E1D2F", "cterm": "59",   "cterm16": "15" },
+  \ "palette": {
+  \   "rosewater": { "gui": "#F5E0DC", "cterm": "NONE" },
+  \   "flamingo":  { "gui": "#F2CDCD", "cterm": "NONE" },
+  \   "mauve":     { "gui": "#DFB1EB", "cterm": "NONE" },
+  \   "pink":      { "gui": "#F5C2E7", "cterm": "NONE" },
+  \   "red":       { "gui": "#F08FA9", "cterm": "NONE" },
+  \   "maroon":    { "gui": "#E8A2AF", "cterm": "NONE" },
+  \   "peach":     { "gui": "#F9C296", "cterm": "NONE" },
+  \   "yellow":    { "gui": "#F0DEAA", "cterm": "NONE" },
+  \   "green":     { "gui": "#ACE5AB", "cterm": "NONE" },
+  \   "blue":      { "gui": "#98BBF5", "cterm": "NONE" },
+  \   "sky":       { "gui": "#89DCEB", "cterm": "NONE" },
+  \   "teal":      { "gui": "#B5E8E0", "cterm": "NONE" },
+  \   "lavender":  { "gui": "#C9CBFF", "cterm": "NONE" },
+  \   "white":     { "gui": "#DEDDF0", "cterm": "NONE" },
+  \   "gray2":     { "gui": "#C3BAC6", "cterm": "NONE" },
+  \   "gray1":     { "gui": "#988BA2", "cterm": "NONE" },
+  \   "gray0":     { "gui": "#6E6C7E", "cterm": "NONE" },
+  \   "black4":    { "gui": "#575268", "cterm": "NONE" },
+  \   "black3":    { "gui": "#332E41", "cterm": "NONE" },
+  \   "black2":    { "gui": "#1E1D2D", "cterm": "NONE" },
+  \   "black1":    { "gui": "#1B1923", "cterm": "NONE" },
+  \   "black0":    { "gui": "#15121C", "cterm": "NONE" },
+  \ }
 \}
 
 function! onedark#GetColors()

@@ -434,3 +434,19 @@ highlight Visual gui=reverse
 highlight MatchParen gui=undercurl guifg=NONE
 highlight def link rubyHelper Macro
 highlight def link rubyViewHelper Macro
+
+" LIGHTSPEED
+call s:h("LightspeedLabel", {"bg": s:colors.palette.black4, "fg": s:colors.palette.white})
+call s:h("LightspeedOverlapped", {"bg": s:colors.palette.black4, "fg": s:colors.palette.white})
+call s:h("LightspeedLabelDistant", {"bg": s:colors.palette.mauve, "fg": s:colors.palette.white})
+call s:h("LightspeedLabelDistantOverlapped", {"bg": s:colors.palette.mauve, "fg": s:colors.palette.white})
+call s:h("LightspeedShortcut", {"bg": s:colors.palette.black2, "fg": s:colors.palette.peach})
+call s:h("LightspeedShortcutOverlapped", {"bg": s:colors.palette.black2, "fg": s:colors.palette.peach, "gui": "bold"})
+call s:h("LightspeedMaskedChar", {"bg": s:colors.palette.black2, "fg": s:colors.palette.red, "gui": "undercurl"})
+call s:h("LightspeedGreyWash", {"bg": s:colors.palette.black2, "fg": s:colors.palette.gray0})
+call s:h("LightspeedUnlabeledMatch", {"bg": s:colors.palette.black2, "fg": s:colors.palette.red, "gui": "underline"})
+call s:h("LightspeedOneCharMatch", {"bg": s:colors.palette.black2, "fg": s:colors.palette.red, "gui": "underline"})
+call s:h("LightspeedUniqueChar", {"bg": s:colors.palette.black2, "fg": s:colors.palette.green, "gui": "strikethrough"})
+call s:h("LightspeedPendingOpArea", {"bg": s:colors.palette.black2, "fg": s:colors.palette.green, "gui": "strikethrough"})
+call s:h("LightspeedPendingChangeOpArea", {"bg": s:colors.palette.black2, "fg": s:colors.palette.green, "gui": "strikethrough"})
+call s:h("LightspeedCursor", {"fg": s:colors.palette.black2, "bg": s:colors.palette.white})
